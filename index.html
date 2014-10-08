@@ -19,19 +19,34 @@
             <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
         </div>
         <div id="impress">
-            <div class="step slide" data-x="-1000" data-y="-1500">
-                <h1>Hi!</h1>
-                <q>We're the<br><span style="color: #9e1b34;">Temple University ACM</span>.<br>And we're <i>all about</i> technology.</q>
+            <div class="step slide" style="text-align: center;" data-x="-1000" data-y="-1500" data-z="-2000">
+                <img src="logo.png" style="width: 400px; height: 500px; margin-top: 20px;">
             </div>
-            <div class="step slide" data-x="0" data-y="-1500">
-                <q style="margin-top: 80px;">In order to be successful in technology, you need a <strong>strong community</strong> to help you through it.</q>
+            <div class="step slide" data-x="0" data-y="-1500" data-z="-1750">
+                <h1 style="margin-top: 50px;">All About<br>Node.js</h1>
+                <q>An adventure in backend javascript.</q>
             </div>
-            <div class="step slide" data-x="1000" data-y="-1500">
-                <q style="margin-top: 40px;">We're a community that puts a focus on <strong>personal</strong>, <strong>professional</strong> and <strong>academic</strong> development to get you ready for a career in tech.</q>
+            <div class="step slide" data-x="1000" data-y="-1500" data-z="-1500">
+                <q style="margin-top: 80px;"><r>Node.js</r> is a <r>server-side javascript</r> runtime <r>based on</r> Google Chrome's javascript engine <r>(V8)</r>.</q>
+            </div>
+            <div class="step slide" data-x="2000" data-y="-1500" data-z="-1250">
+                <q style="margin-top: 60px;"><r>Node.js</r> is highly <r>concurrent</r>. It is based on the principle of <r>non-blocking I/O</r>. This achieved using the event loop pattern.</q>
+            </div>
+            <div class="step slide" data-x="3000" data-y="-1500" data-z="-1000">
+                <h2 style="margin-top: 0px;">Two Approaches to I/O</h1>
+                <code data-gist-id="0521d093a8aaf748abd7"></code>
+            </div>
+            <div class="step slide" data-x="4000" data-y="-1500" data-z="-750">
+                <h2 style="margin-top: 0px;">Performance Comparison</h1>
+                <img src="blocking-vs-non-blocking.png" style="width: 100%; margin-top: 30px;">
             </div>
         </div>
 
-        <script src="bower_components/impress.js/js/impress.js" type="text/javascript"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.9/gist-embed.min.js"></script>
+
+        <script type="text/javascript" src="bower_components/impress.js/js/impress.js"></script>
+        <script type="text/javascript" src="bower_components/livereload/dist/livereload.js?host=localhost"></script>
         <script type="text/javascript">impress().init();</script>
     </body>
 </html>

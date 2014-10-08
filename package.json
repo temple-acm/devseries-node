@@ -1,0 +1,25 @@
+{
+  "name": "devseries-node",
+  "version": "1.0.0",
+  "description": "devseries-node ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/temple-acm/devseries-node.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/temple-acm/devseries-node/issues"
+  },
+  "homepage": "https://github.com/temple-acm/devseries-node",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.9.5",
+    "gulp": "^3.8.8",
+    "gulp-livereload": "^2.1.1"
+  }
+}
