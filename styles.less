@@ -21,9 +21,6 @@ body {
     background:      -o-radial-gradient(lighten(#9e1b34, 10%), #9e1b34);
     background:         radial-gradient(lighten(#9e1b34, 10%), #9e1b34);
 }
-ol, ul {
-    list-style: none;
-}
 blockquote, q {
     quotes: none;
 }
@@ -137,9 +134,10 @@ a:hover,a:focus {
     }
     h2 {
         font-size: 60px;
+        line-height: 80px;
         text-align: center;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-weight: 300;
         color: #9e1b34;
         text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
@@ -156,10 +154,37 @@ a:hover,a:focus {
             color: #9e1b34;
         }
     }
+    ul {
+        padding-left: 40px;
+
+        li {
+            font-size: 48px;
+            line-height: 65px;
+            font-weight: 100;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+            c {
+                font-size: 36px;
+            }
+        }
+    }
     r {
         color: #9e1b34;
         font-weight: 300;
         display: inline;
+    }
+    c {
+        display: inline;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 58px;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a {
+        color: #6695af;
+        text-shadow: none;
+        font-weight: 300;
     }
 
     code .gist {

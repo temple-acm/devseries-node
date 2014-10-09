@@ -33,12 +33,103 @@
                 <q style="margin-top: 60px;"><r>Node.js</r> is highly <r>concurrent</r>. It is based on the principle of <r>non-blocking I/O</r>. This achieved using the event loop pattern.</q>
             </div>
             <div class="step slide" data-x="3000" data-y="-1500" data-z="-1000">
-                <h2 style="margin-top: 0px;">Two Approaches to I/O</h1>
+                <h2 style="margin-top: -30px;">Two Approaches to I/O</h2>
                 <code data-gist-id="0521d093a8aaf748abd7"></code>
             </div>
             <div class="step slide" data-x="4000" data-y="-1500" data-z="-750">
-                <h2 style="margin-top: 0px;">Performance Comparison</h1>
+                <h2 style="margin-top: -30px;">Performance Comparison</h2>
                 <img src="blocking-vs-non-blocking.png" style="width: 100%; margin-top: 30px;">
+            </div>
+            <div class="step slide" data-x="5000" data-y="-1500" data-z="-500">
+                <q style="margin-top: 80px;"><r>Node.js</r>, in short, <r>performs suprisingly well</r> - despite some of the stigma that Javascript usually attracts.</q>
+            </div>
+            <div class="step slide" data-x="6000" data-y="-1500" data-z="-250">
+                <q style="margin-top: 0px;">But the real reson that <r>Node.js</r> is so popular is its, <r>ease of use</r>. Node makes programming <r>simple</r>. This makes it a great language for <r>prototyping and hackathons</r>.</q>
+            </div>
+            <div class="step slide" data-x="7000" data-y="-1500" data-z="0">
+                <h2 style="margin-top: -30px;">Basic Node.js Example</h2>
+                <code data-gist-id="ba15d1b1aaa1163d0539"></code>
+            </div>
+            <div class="step slide" data-x="8000" data-y="-1500" data-z="250">
+                <h2 style="margin-top: -30px;">Node.js Modules</h2>
+                <ul>
+                    <li>Every *.js file is a module</li>
+                    <li>Modules can export internal functions and variables with the <c>exports</c> object</li>
+                    <li>The <c>require(...)</c> function gives access to the exports of other modules</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="9000" data-y="-1500" data-z="500">
+                <h2 style="margin-top: -30px;">Node.js Modules (cont.)</h2>
+                <ul>
+                    <li>Modules are singletons - there is exactly one copy of each module</li>
+                    <li>Modules are encapsulated - the variables and functions in a module can only be accessed by that module</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="10000" data-y="-1500" data-z="750">
+                <h2 style="margin-top: -30px;">Node.js Packages</h2>
+                <ul>
+                    <li>Packages are a collection of Node.js modules</li>
+                    <li>Packages usually expose more complex, polished and complete functionality and/or information</li>
+                    <li>e.g. XML Parser = Module; RSS Reader = Package</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="11000" data-y="-1500" data-z="1000">
+                <h2 style="margin-top: -30px;">Node.js Packages (cont.)</h2>
+                <ul>
+                    <li>Packages are defined by the <c>package.json</c> file</li>
+                    <li><c>package.json</c> describes name, description, repository, author(s) and dependencies of a module</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="12000" data-y="-1500" data-z="1250">
+                <h2 style="margin-top: 140px;">But how do we keep track of all the packages that people write?</h2>
+            </div>
+            <div class="step slide" style="text-align: center;" data-x="13000" data-y="-1500" data-z="1500">
+                <img src="npm.png" style="width: 518px; height: 202px; margin-top: 180px;">
+            </div>
+            <div class="step slide" data-x="14000" data-y="-1500" data-z="1750">
+                <h2 style="margin-top: -30px;">Node.js Package Manager</h2>
+                <ul>
+                    <li>NPM is a repository for millions of node packages</li>
+                    <li>It's also a command line tool for managing dependencies</li>
+                    <li>NPM comes bundled with node - <r>it's an integral part of node.js development</r></li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="15000" data-y="-1500" data-z="2000">
+                <h2 style="margin-top: -30px;">Using NPM</h2>
+                <ul>
+                    <li><c>npm init</c> to create your own new package; this creates a <c>package.json</c> automagically</li>
+                    <li><c>npm install --save &lt;PACKAGE_NAME&gt;</c> to install an npm package as a dependency to your package</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="16000" data-y="-1500" data-z="2250">
+                <h2 style="margin-top: -30px;">Using NPM (cont.)</h2>
+                <ul>
+                    <li>Use <c>npm uninstall --save &lt;PACKAGE_NAME&gt;</c> to uninstall an npm package dependency</li>
+                    <li>Use <c>npm publish</c> to publish your package to npm</li>
+                    <li>Visit <a href="http://npmjs.org">http://npmjs.org</a> to search for npm packages</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="17000" data-y="-1500" data-z="2500">
+                <h2 style="margin-top: -30px;">Common Uses of Node.js</h2>
+                <ul>
+                    <li>Node.js is used most often as a web server; the most popular web server package for node is <c>express</c></li>
+                    <li>Node.js can be used for build tools (e.g. <c>grunt</c> and <c>gulp</c>)</li>
+                    <li>Node.js is also used for command line tools (e.g. coffeescript compiler)</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="18000" data-y="-1500" data-z="2750">
+                <h2 style="margin-top: 140px;">Live Coding Demo<br><span style="color: #888;">Building a Node.js Webserver in less than 30 minutes</span></h2>
+            </div>
+            <div class="step slide" style="text-align: center;" data-x="19000" data-y="-1500" data-z="3000">
+                <h2 style="margin-top: -30px;">Getting Node.js</h2>
+                <a href="http://nodejs.org/" style="font-size: 90px; display: block; margin-top: 200px;">http://nodejs.org</a>
+            </div>
+            <div class="step slide" style="text-align: center;" data-x="20000" data-y="-1500" data-z="8000">
+                <iframe src="http://giphy.com/embed/6vWVzDv19i3MQ?html5=true" width="500" height="448" frameBorder="0"></iframe>
+                <h2 style="margin-top: 20px;">Happy Hacking!</h2>
+            </div>
+            <div class="step slide" style="text-align: center;" data-x="21000" data-y="-1500" data-z="8250">
+                <img src="logo.png" style="width: 400px; height: 500px; margin-top: 20px;">
             </div>
         </div>
 

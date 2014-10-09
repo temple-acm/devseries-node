@@ -8,7 +8,7 @@ gulp.task('server', function(next) {
     app.listen(process.env.PORT || 3000, next);
 });
 
-gulp.task('watch', ['server'], function() {
+gulp.task('default', ['server'], function() {
     var server = livereload();
     gulp.watch('./*.*').on('change', function(file) {
         console.log('lol', file.path);
